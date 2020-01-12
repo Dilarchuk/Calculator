@@ -6,7 +6,7 @@ class Calculator:
     def getandreplace(self):  # replace x, + and % to symbols that can be used in calculations
         # we wont re write this to the text box until we are done with calculations
 
-        self.txt = self.e.get() # Get value from text box and assign it to the global txt var
+        self.txt = self.e.get() # Get value from text box and assign it to the global txt var pravilno videl simvoli
         self.txt = self.txt.replace('÷', '/')
         self.txt = self.txt.replace('x', '*')
         self.txt = self.txt.replace('%', '/100')
@@ -84,7 +84,7 @@ class Calculator:
 
     def __init__(self, master):  # Constructor method
         self.txt = 'o'  # Global var to work with text box contents
-        master.title('Calulator')
+        master.title('Calculator')
         master.geometry()
         self.e = Entry(master)
         self.e.grid(row=0, column=0, columnspan=6, pady=3)
